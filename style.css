@@ -1,0 +1,104 @@
+body {
+  background-color: black;
+  color: white;
+
+  text-align: center;
+  align-content: center;
+}
+
+header {
+  display: flex;
+  background-color: #ff5563;
+  height: 4rem;
+  border-radius: .2rem;
+}
+
+header a {
+  color: black;
+  text-align: right;
+  margin: 6px;
+}
+
+.container {
+  text-align: left;
+  max-width: 50px;
+  margin-right: 10px;
+  margin: 0.5rem;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+
+  font-family: "Beth Ellen";
+}
+
+h1 span {
+  color: #ff5563;
+
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 4.5rem;
+}
+
+a {
+  color: black;
+  background-color: #ff5563;
+  text-decoration: none;
+  padding: 1rem .5rem;
+
+  border: 1px solid black;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+
+  transition: background-color 300ms;
+}
+
+a:hover {
+  background-color: #e93a48;
+  box-shadow: 0px 6px 4px black;
+}
+
+#bg-image {
+  background-image: url("https://images.pexels.com/photos/2098134/pexels-photo-2098134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  opacity: 0.3;
+
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+@media (width < 40rem) {
+  html {
+    font-size: 70%;
+  }
+}
+
+h1, p, a {
+  animation: appear 1s backwards;
+}
+
+h1 {
+  animation-delay: 0.2s;
+}
+
+p {
+  animation-delay: 0.8s;
+}
+
+a {
+  animation-delay: 1.6s;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+}
