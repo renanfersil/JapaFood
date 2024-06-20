@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 body {
   background-color: black;
   color: white;
@@ -8,9 +12,21 @@ body {
 
 header {
   display: flex;
+  padding: 10px 0;
   background-color: #ff5563;
-  height: 4rem;
-  border-radius: .2rem;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logo img {
+  width: 4rem;
+  height: auto;
+  margin-left: 20px;
+  border: 3px solid black;
+  border-radius: 50%;
+  padding: .2rem;
+  cursor: pointer;
 }
 
 header a {
@@ -19,11 +35,17 @@ header a {
   margin: 6px;
 }
 
-.container {
-  text-align: left;
-  max-width: 50px;
-  margin-right: 10px;
-  margin: 0.5rem;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+
+  justify-content: center;
 }
 
 h1 {
@@ -38,28 +60,32 @@ h1 span {
 
 }
 
-p {
+h2 {
   font-size: 1.5rem;
   margin-bottom: 4.5rem;
 }
 
-a {
+section a {
   color: black;
   background-color: #ff5563;
   text-decoration: none;
   padding: 1rem .5rem;
-
-  border: 1px solid black;
+  margin: auto;
+  border: 2px solid black;
   font-size: 1.5rem;
   border-radius: .5rem;
 
   transition: background-color 300ms;
 }
 
-a:hover {
+header nav ul li a:hover {
   background-color: #e93a48;
   box-shadow: 0px 6px 4px black;
 }
+
+a:hover {
+  background-color: #e93a48;
+} 
 
 #bg-image {
   background-image: url("https://images.pexels.com/photos/2098134/pexels-photo-2098134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
@@ -81,24 +107,52 @@ a:hover {
   }
 }
 
-h1, p, a {
-  animation: appear 1s backwards;
+header, h1, h2, div a, footer {
+  animation: appear 2s backwards;
+}
+
+header {
+  animation-delay: .2s;
 }
 
 h1 {
-  animation-delay: 0.2s;
+  animation-delay: .4s;
 }
 
-p {
-  animation-delay: 0.8s;
+
+h2 {
+  animation-delay: .6s;
 }
 
-a {
-  animation-delay: 1.6s;
+div a {
+  animation-delay: .8s;
+}
+
+footer {
+  animation-delay: 1s;
 }
 
 @keyframes appear {
   0% {
     opacity: 0;
   }
+}
+
+section {
+  margin-top: 5rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+
+  color: black;
+  padding: 10px 0;
+  background-color: #ff5563;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 4rem;
 }
