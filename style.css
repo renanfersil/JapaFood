@@ -167,8 +167,8 @@ section {
 }
 
 hr {
-  color: black;
-  margin: 2px 0;
+  background: black;
+  margin-top: 2rem;
 
 }
 
