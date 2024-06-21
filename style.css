@@ -165,3 +165,7 @@ section {
 
   height: 4rem;
 }
+
+footer p {
+  margin-bottom: 1rem;
+}
