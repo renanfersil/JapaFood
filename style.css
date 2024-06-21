@@ -31,8 +31,17 @@ header {
 
 header a {
   color: black;
-  text-align: right;
-  margin: 6px;
+  text-alignt: right;
+  background-color: #ff5563;
+  text-decoration: none;
+  padding: 1rem .5rem;
+  margin: auto;
+  border: 2px solid black;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+
+  transition: background-color 300ms
+  
 }
 
 nav ul {
