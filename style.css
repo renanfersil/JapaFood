@@ -165,3 +165,8 @@ section {
 
   height: 4rem;
 }
+
+hr {
+  width: 100%
+  background-color: black;
+}
