@@ -179,8 +179,9 @@ section {
 }
 
 .footer p {
-  margin-top: 1rem;
+  margin: 1rem;
   font-size: 12px;
   font-style: italic;
   font-weight: bold;
+  text-align: right;
 }
